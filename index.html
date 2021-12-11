@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/style.css"
+        rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css"
+        rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Fairy Garden Calendar</title>
+</head>
+
+<body>
+  <!-- https://www.jsdelivr.com/package/npm/fullcalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+  <!-- https://code.jquery.com/ -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+
+  <div id="calendar"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        /* Determines if the “all-day” slot is displayed at the top of the calendar. */
+        allDaySlot: false,
+        /* Called after the calendar’s date range has been initially set or changed in some way and the DOM has been
+        updated. */
+        datesSet: function () {
+          $('.fc-event-time, .fc-list-event-time').each(function () {
+            $(this).html($(this).html().replace('24', '00').substring(0, 13));
+          });
+          $('.fc-scrollgrid-shrink-cushion').each(function () {
+            $(this).html($(this).html().replace('24', '00').substring(0, 5));
+          });
+        },
+        /* Determines the text that will be displayed on the calendar’s column headings. */
+        dayHeaderFormat: { weekday: 'long' },
+        /* A fallback duration for timed Event Objects without a specified end value. */
+        defaultTimedEventDuration: '00:30:00',
+        /* Determines the time-text that will be displayed on each event. */
+        eventTimeFormat: {
+          hour: 'numeric',
+          hour12: false,
+          minute: '2-digit'
+        },
+        /* An array of Event Objects that will be displayed on the calendar. */
+        events: events,
+        /* The day that each week begins. */
+        firstDay: 1,
+        /* Defines the buttons and title at the top of the calendar. */
+        headerToolbar: {
+          center: 'title',
+          left: 'prev,next today',
+          right: /*'dayGridMonth,*/'timeGridWeek,timeGridDay,listWeek'
+        },
+        /* Sets the height of the entire calendar, including header and footer. */
+        height: 'auto',
+        /* The initial view when the calendar loads. */
+        initialView: 'timeGridWeek',
+        /* Whether or not to display a marker indicating the current time. */
+        nowIndicator: true,
+        /* The frequency for displaying time slots. */
+        slotDuration: '00:15:00',
+        /* Determines the text that will be displayed within a time slot. */
+        slotLabelFormat: {
+          hour: 'numeric',
+          hour12: false,
+          minute: '2-digit'
+        },
+        /* Determines the last time slot that will be displayed for each day. */
+        slotMaxTime: UtcToLocal('24:30'),
+        /* Determines the first time slot that will be displayed for each day. */
+        slotMinTime: UtcToLocal('16:30')
+      });
+      calendar.render();
+    });
+
+    UtcToLocal = s => {
+      return ('0' + Math.trunc((parseInt(s.split(':')[0] * 60) + parseInt(s.split(':')[1]) -
+        new Date().getTimezoneOffset()) / 60)).slice(-2) + ':' + ('0' + Math.trunc((parseInt(s.split(':')[0] * 60) +
+          parseInt(s.split(':')[1]) - new Date().getTimezoneOffset()) % 60)).slice(-2)
+    }
+  </script>
+
+  <script src="events.js"></script>
+
+  </body>
+
+</html>
