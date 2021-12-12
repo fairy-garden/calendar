@@ -53,7 +53,7 @@ const events = [
     color: '#69278a',
     end: '2021-11-27T18:00:00Z',
     start: '2021-11-27T16:30:00Z',
-    title: 'Raid - Twin Largos CM - Let\'s Not Do That Again'
+    title: 'Raid - Conjured Amalgamate CM - Some Disassembly Required'
   },
   {
     color: '#69278a',
