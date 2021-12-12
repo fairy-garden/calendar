@@ -1,5 +1,5 @@
 const events = [
-  /* Recurring Events */
+  /* recurring events */
   {
     color: '#2c9d5d',
     daysOfWeek: ['0', '2', '3', '4', '5', '6'],
@@ -48,11 +48,29 @@ const events = [
     startTime: UtcToLocal('17:00'),
     title: 'Strike Missions'
   },
-  /* Non Recurring Events */
+  /* non-recurring events */
+  {
+    color: '#69278a',
+    end: '2021-11-27T18:00:00Z',
+    start: '2021-11-27T16:30:00Z',
+    title: 'Raid - Twin Largos CM - Let\'s Not Do That Again'
+  },
+  {
+    color: '#69278a',
+    end: '2021-12-04T18:00:00Z',
+    start: '2021-12-04T16:30:00Z',
+    title: 'Raid - Twin Largos CM - Let\'s Not Do That Again'
+  },
   {
     color: '#69278a',
     end: '2021-12-11T18:00:00Z',
     start: '2021-12-11T16:30:00Z',
-    title: 'Raid'
+    title: 'Raid - Qadim CM - Heroes of the Forge'
+  },
+  {
+    color: '#69278a',
+    end: '2021-12-18T18:00:00Z',
+    start: '2021-12-18T16:30:00Z',
+    title: 'Raid - Qadim - Taking Turns'
   }
 ]
