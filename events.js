@@ -72,5 +72,17 @@ const events = [
     end: '2021-12-18T18:00:00Z',
     start: '2021-12-18T16:30:00Z',
     title: 'Raid - Qadim - Taking Turns'
+  },
+  {
+    color: '#69278a',
+    end: '2022-01-08T18:00:00Z',
+    start: '2022-01-08T16:30:00Z',
+    title: 'Raid - Qadim CM - Heroes of the Forge'
+  },
+  {
+    color: '#69278a',
+    end: '2022-01-15T18:00:00Z',
+    start: '2022-01-15T16:30:00Z',
+    title: 'Raid - Dhuum CM - Death Eater'
   }
 ]
