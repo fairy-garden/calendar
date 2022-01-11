@@ -77,12 +77,18 @@ const events = [
     color: '#69278a',
     end: '2022-01-08T18:00:00Z',
     start: '2022-01-08T16:30:00Z',
-    title: 'Raid - Qadim CM - Heroes of the Forge'
+    title: 'Raid - Slothasor - Slippery Slubling'
   },
   {
     color: '#69278a',
     end: '2022-01-15T18:00:00Z',
     start: '2022-01-15T16:30:00Z',
+    title: 'Raid - Qadim CM - Heroes of the Forge'
+  },
+  {
+    color: '#69278a',
+    end: '2022-01-22T18:00:00Z',
+    start: '2022-01-22T16:30:00Z',
     title: 'Raid - Dhuum CM - Death Eater'
   }
 ]
