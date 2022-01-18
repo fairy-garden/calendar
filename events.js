@@ -81,14 +81,14 @@ const events = [
   },
   {
     color: '#69278a',
-    end: '2022-01-15T18:00:00Z',
-    start: '2022-01-15T16:30:00Z',
+    end: '2022-01-22T18:00:00Z',
+    start: '2022-01-22T16:30:00Z',
     title: 'Raid - Qadim CM - Heroes of the Forge'
   },
   {
     color: '#69278a',
-    end: '2022-01-22T18:00:00Z',
-    start: '2022-01-22T16:30:00Z',
+    end: '2022-01-29T18:00:00Z',
+    start: '2022-01-29T16:30:00Z',
     title: 'Raid - Dhuum CM - Death Eater'
   }
 ]
