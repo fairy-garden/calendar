@@ -83,12 +83,12 @@ const events = [
     color: '#69278a',
     end: '2022-01-29T18:00:00Z',
     start: '2022-01-29T16:30:00Z',
-    title: 'Raid - Qadim CM - Heroes of the Forge'
+    title: 'Raid - Bastion of the Penitent CM - The Real Raiders of Tyria'
   },
   {
     color: '#69278a',
     end: '2022-02-05T18:00:00Z',
     start: '2022-02-05T16:30:00Z',
-    title: 'Raid - Dhuum CM - Death Eater'
+    title: 'Raid - The Key of Ahdashim CM - Passport to Ahdashim'
   }
 ]
