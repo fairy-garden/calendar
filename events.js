@@ -1,52 +1,18 @@
 const events = [
   /* recurring events */
   {
-    color: '#2c9d5d',
+    color: '#186885',
     daysOfWeek: ['0', '2', '3', '4', '5', '6'],
-    endTime: UtcToLocal('19:00'),
-    startTime: UtcToLocal('18:00'),
+    endTime: UtcToLocal('17:30'),
+    startTime: UtcToLocal('16:00'),
     title: 'Fractals Team 1'
-  },
-  {
-    color: '#186885',
-    daysOfWeek: ['1'],
-    endTime: UtcToLocal('23:00'),
-    startTime: UtcToLocal('21:30'),
-    title: 'Fractals Team 2'
-  },
-  {
-    color: '#186885',
-    daysOfWeek: ['0', '2', '3', '4', '5', '6'],
-    endTime: UtcToLocal('21:00'),
-    startTime: UtcToLocal('19:30'),
-    title: 'Fractals Team 2'
   },
   {
     color: '#caaa2a',
     daysOfWeek: ['3'],
-    endTime: UtcToLocal('18:00'),
-    startTime: UtcToLocal('17:00'),
+    endTime: UtcToLocal('18:30'),
+    startTime: UtcToLocal('17:30'),
     title: 'PvE Guild Missions'
-  },
-  {
-    color: '#caaa2a',
-    daysOfWeek: ['5'],
-    endTime: UtcToLocal('17:00'),
-    startTime: UtcToLocal('16:30'),
-    title: 'PvP Guild Mission'
-  },
-  {
-    color: '#dc423e',
-    daysOfWeek: ['0', '1', '2', '3', '4', '5', '6'],
-    startTime: UtcToLocal('24:00'),
-    title: 'Reset'
-  },
-  {
-    color: '#a66356',
-    daysOfWeek: ['2', '4', '6'],
-    endTime: UtcToLocal('17:30'),
-    startTime: UtcToLocal('17:00'),
-    title: 'Strike Missions'
   },
   /* non-recurring events */
   {
@@ -87,8 +53,8 @@ const events = [
   },
   {
     color: '#69278a',
-    end: '2022-02-05T18:00:00Z',
-    start: '2022-02-05T16:30:00Z',
-    title: 'Raid - The Key of Ahdashim CM - Passport to Ahdashim'
+    end: '2022-02-12T18:00:00Z',
+    start: '2022-02-12T16:30:00Z',
+    title: 'Raid - Dhuum CM - Death Eater'
   }
 ]
