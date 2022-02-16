@@ -56,5 +56,11 @@ const events = [
     end: '2022-02-12T18:00:00Z',
     start: '2022-02-12T16:30:00Z',
     title: 'Raid - Dhuum CM - Death Eater'
+  },
+  {
+    color: '#69278a',
+    end: '2022-02-19T18:00:00Z',
+    start: '2022-02-19T16:30:00Z',
+    title: 'Raid - Dhuum CM - Death Eater'
   }
 ]
