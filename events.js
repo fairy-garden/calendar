@@ -3,16 +3,9 @@ const events = [
   {
     color: '#186885',
     daysOfWeek: ['0', '2', '3', '4', '5', '6'],
-    endTime: UtcToLocal('18:30'),
-    startTime: UtcToLocal('17:00'),
+    endTime: UtcToLocal('17:00'),
+    startTime: UtcToLocal('15:30'),
     title: 'Fractals Team 1'
-  },
-  {
-    color: '#caaa2a',
-    daysOfWeek: ['3'],
-    endTime: UtcToLocal('19:30'),
-    startTime: UtcToLocal('18:30'),
-    title: 'Guild Missions'
   },
   /* non-recurring events */
   {
