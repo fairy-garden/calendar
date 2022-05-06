@@ -5,7 +5,7 @@ const events = [
     daysOfWeek: ['0', '2', '3', '4', '5', '6'],
     endTime: UtcToLocal('17:00'),
     startTime: UtcToLocal('15:30'),
-    title: 'Fractals Team 1'
+    title: 'Fractals of the Mists'
   },
   /* non-recurring events */
   {
